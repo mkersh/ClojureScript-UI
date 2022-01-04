@@ -6,3 +6,4 @@ public/js/**
 .shadow-cljs/**
 package-lock.json
 package.json
+.calva/**

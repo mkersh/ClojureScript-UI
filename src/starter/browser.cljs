@@ -23,7 +23,7 @@
 (println "can you see this as well!!!")
 
 
-(defn hello [] "Hello from shadow-cljs. AAA")
+(defn hello [] "Hello from shadow-cljs. AAA BBB")
 
 ;; uncomment this to alter the provided "app" DOM element
 (set! (.-innerHTML (js/document.getElementById "app")) (hello))
