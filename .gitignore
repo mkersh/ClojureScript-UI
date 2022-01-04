@@ -1,1 +1,8 @@
 
+node_modules/**
+public/js/**
+.clj-kondo/**
+.lsp/**
+.shadow-cljs/**
+package-lock.json
+package.json
