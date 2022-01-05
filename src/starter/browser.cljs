@@ -32,23 +32,6 @@
 (defn hello [] "Hello from shadow-cljs. AAA BBB")
 
 ;; uncomment this to alter the provided "app" DOM element
-;;(set! (.-innerHTML (js/document.getElementById "app")) (hello))
+(set! (.-innerHTML (js/document.getElementById "app")) (hello))
 
-(defn render [component]
-  (rdom/render
-   component
-   ;; (.-body js/document) ;; alternative to next
-   (js/document.getElementById "app")))
-
-(def click-count (r/atom 0))
-
-(defn counting-component []
-  [:div
-   "The atom " [:code "click-count"] " has value: "
-   @click-count ". "
-   [:input {:type "button" :value "Click me!"
-            :on-click #(swap! click-count inc)}]])
-
-
-(render counting-component)
 
