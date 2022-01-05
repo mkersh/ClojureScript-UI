@@ -5,5 +5,4 @@ public/js/**
 .lsp/**
 .shadow-cljs/**
 package-lock.json
-package.json
 .calva/**
